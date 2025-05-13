@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <meta name="author" content="Aquila Morais">
+    <meta name="description" content="Página de Fórmulário como exercício de HTML e CSS">
+</head>
+<body>
+    <div id="page" class="flex">
+        <div class="forms">
+            <header>
+                <img src="./assets/arrow-left-02.svg" alt="">
+                <span>Voltar</span>
+            </header>
+    
+            <main>
+                <div class="headline">
+                    <h1>Formulário de matrícula</h1>
+                    <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+                    </p>
+                </div>
+                <div id class="info">
+                    <h3>Informações da criança</h3>
+                    <form action="">
+                        <label for="nome">Nome completo</label>
+                        <input id="nome" type="text" placeholder="Digite seu nome completo" required>
+    
+                        <label for="data">Data de nascimento</label>
+                        <input id="data" type="datetime-local" placeholder="Digite sua data de nascimento" required>
+    
+                        <label for="sexo">Sexo</label>
+                        <select name="" id="sexo">
+                            <option selected disabled value="">Selecione seu gênero</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="">Feminino</option>
+                        </select>
+                        <img src="./assets/arrow-down-01.svg" alt="">
+    
+                        <label for="info_med">Informações médicas</label>
+                        <textarea name="" id="" placeholder="Descreva suas especificações médicas"></textarea>
+    
+                        <label for="" class="pdf">
+                            <input type="file" accept="image/*" class="pdf_input">
+                            <img src="./assets/cloud-upload.svg" alt="">
+                            <span class="pdf_input">Clique aqui para selecionar arquivos</span>
+                        </label>
+                    </form>
+                </div>
+    
+                <div class="endereco">
+                    <h3>Endereço residencial</h3>
+                    <form action="">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="Digite seu CEP">
+    
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" placeholder="Digite sua rua">
+    
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Digite sua cidade">
+    
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" placeholder="Numº">
+    
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" placeholder="Digite a sigla do seu estado">
+                    </form>
+                </div>
+    
+                <div class="responsavel">
+                    <h3>Informações do responsável</h3>
+                    <form action="">
+                        <label for="nome">Nome do responsável</label>
+                        <input type="text" id="nome" placeholder="Digite o nome completo">
+                        <label for="">Principal responsável legal e contato de emergência</label>
+    
+                        <label for="tel">Telefone</label>
+                        <input type="tel" id="tel" placeholder="teleone">
+    
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu email">
+                    </form>
+                </div>
+    
+                <div class="matricula">
+                    <h3>Opções de matrícula</h3>
+                    <form action="">
+                        <label for="turno">Selecione o turno de estudo</label>
+    
+                        <input type="radio" id="manha" name="horario">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/sun-02.png" alt="">
+                        <label for="manha">Manhã</label>
+    
+                        <input type="radio" id="tarde" name="horario">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/sun-cloud-02.png" alt="">
+                        <label for="tarde">Tarde</label>
+    
+                        <label for="esp">Em qual esporte você gostaria de inscrever seu filho?</label>
+    
+                        <input type="radio" id="futebol" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/football.png" alt="">
+                        <label for="futebol">Futebol</label>
+    
+                        <input type="radio" id="basquete" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/basketball-02.png" alt="">
+                        <label for="basquete">Basquete</label>
+    
+                        <input type="radio" id="natacao" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/swimming.png" alt="">
+                        <label for="natacao">Natação</label>
+    
+                        <input type="radio" id="yoga" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/yoga-02.png" alt="">
+                        <label for="yoga">Yoga</label>
+    
+                        <input type="radio" id="volley" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/volleyball.png" alt="">
+                        <label for="volley">Volley</label>
+    
+                        <input type="radio" id="boxe" name="esporte">
+                        <img src="./assets/check.svg" alt="">
+                        <img src="./assets/boxing-glove-01.png" alt="">
+                        <label for="boxe">Boxe</label>
+                    </form>
+                </div>
+    
+                <div class="mark">
+                    <form action="">
+                        <input type="checkbox" name="" id="termos">
+                        <img src="./assets/check.svg" alt="">
+                        <label for="termos">Declaro que li e concordo com os Termos e Condições e com a Política de
+                            Privacidade
+                            da escola Estrela do Amanhã.</label>
+                    </form>
+                </div>
+    
+                <div class="changes">
+                    <button class="salvar">Salvar respostas</button>
+                    <button class="fazer_mat">Fazer matrícula</button>
+                </div>
+    
+            </main>
+        </div>
+
+        <div class="bg">
+            <div class="rodape">
+                <img src="./assets/Frame 48095956.svg" alt="">
+                <h1>Porque cada momento de aprendizado conta</h1>
+                <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+            </div>
+            <img src="./assets/pana.png" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>
