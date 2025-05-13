@@ -1,0 +1,17 @@
+.forms {
+    display:flex;
+    flex-direction: column;
+    width: 50dvw;
+}
+
+.header {
+    display: flex;
+    width: 80px;
+    height: 24px;
+}
+
+.header span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #57534E
+}
