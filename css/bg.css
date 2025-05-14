@@ -6,6 +6,8 @@
     background-color: #fee7d6; 
     align-items: center;
     justify-content: center;    
+    position: sticky;
+    top: 0;
 }
 
 .bg img {
@@ -13,17 +15,17 @@
     height: 368px;
 }
 
-.rodape {
+.bg-text {
     width: 564px;
     padding-bottom: 32px;
 }
 
-.rodape img {
+.bg-text img {
     width: 203px;
     height: 32px;
 }
 
-.rodape h1 {
+.bg-text h1 {
     line-height: 1.2;
     padding-bottom: 12px;
 }
@@ -38,7 +40,7 @@
     color: #e43a12;
 }
 
-.rodape p {
+.bg-text p {
     font-weight: 400;
     font-size: 16px;
     color: #57534e

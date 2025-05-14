@@ -4,6 +4,8 @@
     width: 50dvw;
     justify-content: center;
     align-items: center;
+    min-height: 100dvh;
+    scrollbar-width: none;
 }
 
 .header {
@@ -68,9 +70,26 @@
     height: 48px;
     padding-left: 16px;
     margin-bottom: 16px;
+    padding-right: 16px;
 }
 
 .info input:focus {
+    outline: none;
+    border-color: #F3541C;
+}
+
+.info select {
+    border-radius: 8px;
+    border: solid;
+    border-color: #D6D3D1;
+    border-width: 1px;
+    height: 48px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    appearance: none;
+}
+
+.info select:focus {
     outline: none;
     border-color: #F3541C;
 }
@@ -80,4 +99,294 @@
     font-weight: 400;
     font-size: 14px;
     color: #57534E;
+}
+
+.info textarea {
+    border-radius: 8px;
+    border: solid;
+    border-color: #D6D3D1;
+    border-width: 1px;
+    height: 120px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+}
+
+.info textarea:focus {
+    outline: none;
+    border-color: #F3541C;
+}
+
+.card-certidao {
+    border-radius: 8px;
+    border: solid;
+    border-color: #D6D3D1;
+    border-width: 1px;
+    height: 160px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    display: none;
+}
+
+.input-certidao {
+    display: none;
+    width: 100%;
+    height: 40px;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco h1 {
+    font: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #292524;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.endereco input {
+    border-radius: 8px;
+    border: solid;
+    border-color: #D6D3D1;
+    border-width: 1px;
+    height: 48px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+}
+
+.endereco input:focus {
+    outline: none;
+    border-color: #F3541C;
+}
+
+.endereco label {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+}
+
+.cep {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-linha {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsavel {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsavel h1 {
+    font: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #292524;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.responsavel input {
+    border-radius: 8px;
+    border: solid;
+    border-color: #D6D3D1;
+    border-width: 1px;
+    height: 48px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    padding-right: 16px;
+}
+
+.responsavel form {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsavel input:focus {
+    outline: none;
+    border-color: #F3541C;
+}
+
+.responsavel label {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+}
+
+.responsavel p {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+    margin-top: -12px;
+    padding-bottom: 16px;
+}
+
+.matricula {
+    display: flex;
+    flex-direction: column;
+}
+
+.turno {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-turno {
+    display: flex;
+    flex-direction: column;
+    border: #D6D3D1 solid;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 36px;
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card-turno:hover {
+    border-color: #F3541C;
+}
+
+
+.card-turno img {
+    width: 36px;
+    height: 36px;
+}
+
+.input-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.matricula h1 {
+    font: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #292524;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.matricula p {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+    padding-bottom: 16px;
+}
+
+.esportes p {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.container-esporte {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.card-esporte {
+    display: flex;
+    flex-direction: column;
+    border: #D6D3D1 solid;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 36px;
+    width: 24%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-esporte:hover {
+    border-color: #F3541C;
+}
+
+.mark {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mark div{
+    height: 60px;
+}
+
+.mark form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.mark label {
+    font: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.changes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 80px;
+    gap: 12px;
+}
+
+.botao-salvar {
+    background-color: #ffffff;
+    border-color: #F3541C;
+    border-radius: 8px;
+    width: 160px;
+    height: 40px;
+    color: #F3541C;
+    font-weight: 600;
+    border-style: solid;
+}
+
+.botao-matricula {
+    background-color: #F3541C;
+    border: none;
+    border-radius: 8px;
+    width: 160px;
+    height: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
